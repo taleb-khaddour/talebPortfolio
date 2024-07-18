@@ -1,0 +1,175 @@
+
+*{
+    font-family: "Poppins", sans-serif;
+    overflow: screenY;
+}
+.Home_section{
+
+   
+    height: 100vh;
+    position: relative;
+    margin-bottom: 100px;
+
+
+}
+.Home_section img {
+    width :500px;
+    background-position: top;
+    background-size: contain;
+    position: absolute;
+    top :0;
+    right: 0;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    z-index:-1;
+    
+}
+
+/* shapes */
+
+.ShapeImage{
+    position: absolute;
+    width: 500px;
+    height: 95vh;
+    background-color: #c0a52f;
+    top :-153px;
+    right: 30px;
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
+    z-index:-2;
+}
+.Shape_triangle{
+    top:50%;
+    left:20rem;
+    transform: rotate(30deg);
+    width: 300px;
+    height: 300px;
+    background-color: #6f6e6b;
+    opacity: 0.5;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+.Shape_triangle1{
+    top:50%;
+    left:17rem;
+    transform: rotate(-20deg);
+    width: 80px;
+    height: 50px;
+    background-color: #c0a52f;
+    opacity: 0.5;
+    position: absolute;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.Shape1{
+    position: absolute;
+    top:-190px;
+    right:55%;
+    width:4px;
+    height: 300px;
+    opacity: 0.5;
+    transform: rotate(150deg);
+  z-index: -10;
+ background-color:var(--primary-color);
+ animation-name: shapeChange;
+ animation-timing-function: ease-out;
+ animation-duration: 0.5s;
+}
+.Shape2{
+    position: absolute;
+    top:-60px;
+    right:60%;
+    width:5px;
+    height: 350px;
+    opacity: 0.5;
+    transform: rotate(150deg);
+
+
+  z-index: -10;
+ background-color:var(--primary-color);
+ animation-name: shapeChange;
+ animation-timing-function: ease-out;
+ animation-duration: 0.5s;
+}
+
+.Shape3{
+    position: absolute;
+    bottom:-200px;
+    right:60%;
+    width:5px;
+    height: 800px;
+    opacity: 0.5;
+   transform: rotate(150deg);
+
+  z-index: -10;
+ background-color:var(--primary-color);
+ animation-name: shapeChange;
+ animation-timing-function: ease-out;
+ animation-duration: 0.5s;
+}
+.Shape4{
+    position: absolute;
+    bottom:-10px;
+    right:60%;
+    width:5px;
+    height: 100px;
+    opacity: 0.5;
+   transform: rotate(150deg);
+  z-index: -10;
+ background-color:var(--primary-color);
+ animation-name: shapeChange;
+ animation-timing-function: ease-out;
+ animation-duration: 0.8s;
+ 
+}
+
+/* end shapes  */
+
+.Text_Home_section{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    max-width:600px ;
+    width: 60%;
+    
+    transform: translateY(10px);
+    
+}
+
+.Text_Home_section span{
+ color : var(--primary-color);
+text-shadow: 3px 3px 3px #c0a52f;
+}
+.Text_Home_section h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-bottom: 30px;
+}
+.Text_Home_section a {
+    width: 200px;
+}
+.Text_Home_section p{
+    padding-bottom: 72px;
+  
+}
+@keyframes shapeChange {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    
+}
+@media all and (max-width: 958px) {
+
+    .Home_section img{
+        display: none !important;
+    }
+
+    .ShapeImage{
+       display: none;
+    }
+}
